@@ -44,6 +44,52 @@ This environment is designed using a Zero Trust model:
         +------------------------+
         |      Tailscale         |
         |   Private Overlay VPN  |
+
+
+🌐 Access Model
+External Access
+Cloudflare Tunnel
+Cloudflare WAF
+Cloudflare Access for identity-aware authentication
+Private Access
+Tailscale for private internal access
+Trusted devices can securely reach internal services without exposing them publicly
+🔒 Security Layers
+Perimeter Security
+Cloudflare WAF
+DDoS protection
+Protected DNS exposure
+Identity and Access
+Cloudflare Access
+Tailscale device trust
+Authentication before service access
+Network Segmentation
+Trusted network
+IoT network
+Guest network
+Default deny between VLANs
+🔁 Traffic Flow
+External User
+
+User → Cloudflare → Access Authentication → Reverse Proxy → Service
+
+Internal Trusted User
+
+User → Tailscale → Internal Service
+
+🛡 Design Principles
+Never expose services directly to the internet
+Require authentication before access
+Separate networks by trust level
+Use layered controls instead of relying on a single boundary
+📈 Future Improvements
+Add CrowdSec for adaptive blocking
+Add centralized logging and alerting
+Add service-level authentication
+Add policy-based device access controls
+🎯 Purpose
+
+This project demonstrates a practical Zero Trust implementation in a homelab environment using modern access controls and segmentation principles.
         +-----------+------------+
                     |
                     v
