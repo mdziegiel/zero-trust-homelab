@@ -15,7 +15,7 @@ This environment is designed using a Zero Trust model:
 
 ## 🖼 Architecture Diagram
 
-![Architecture](architecture.png)
+<img src="architecture.png" width="750"/>
 
 ```
 
