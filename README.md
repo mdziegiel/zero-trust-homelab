@@ -13,6 +13,40 @@ This environment is designed using a Zero Trust model:
 - Segmented internal network
 - Multiple secure access paths using Cloudflare and Tailscale
 
+                  Internet
+                    |
+        +------------------------+
+        |   Cloudflare (WAF)     |
+        |   Zero Trust Access    |
+        +-----------+------------+
+                    |
+                    v
+        +------------------------+
+        |   Cloudflare Tunnel    |
+        +-----------+------------+
+                    |
+                    v
+        +------------------------+
+        |  Nginx Proxy Manager   |
+        +-----------+------------+
+                    |
+     +--------------+--------------+
+     |                             |
+     v                             v
++-------------+              +--------------+
+|   Web Apps  |              |   Services   |
+| (Plex, etc) |              | (Internal)   |
++-------------+              +--------------+
+
+        Private Access Layer
+                    |
+        +------------------------+
+        |      Tailscale         |
+        +-----------+------------+
+                    |
+                    v
+              Trusted Devices
+
 ---
 
 ## 🌐 Access Model
