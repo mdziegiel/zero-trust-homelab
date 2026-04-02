@@ -15,8 +15,6 @@ This environment is designed using a Zero Trust model:
 
 ## 🖼 Architecture Diagram
 
- ## 🖼 Architecture Diagram
-
 ```
                 Internet
                     |
