@@ -16,39 +16,9 @@ This environment is designed using a Zero Trust model:
 ## 🖼 Architecture Diagram
 
 ```
-                Internet
-                    |
-        +------------------------+
-        |   Cloudflare (WAF)     |
-        |   Zero Trust Access    |
-        +-----------+------------+
-                    |
-                    v
-        +------------------------+
-        |   Cloudflare Tunnel    |
-        +-----------+------------+
-                    |
-                    v
-        +------------------------+
-        |  Nginx Proxy Manager   |
-        +-----------+------------+
-                    |
-        +-----------+-----------+
-        |                       |
-        v                       v
-+----------------+    +----------------+
-|    Web Apps    |    |    Services    |
-|   (Plex, etc)  |    |   (Internal)   |
-+----------------+    +----------------+
+## 🖼 Architecture Diagram
 
-        Private Access Layer
-                    |
-        +------------------------+
-        |      Tailscale         |
-        +-----------+------------+
-                    |
-                    v
-              Trusted Devices
+![Architecture](architecture.png)
 ```
 
 ---
