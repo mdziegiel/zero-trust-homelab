@@ -44,7 +44,10 @@ This environment is designed using a Zero Trust model:
         +------------------------+
         |      Tailscale         |
         |   Private Overlay VPN  |
-
+        +-----------+------------+
+                    |
+                    v
+              Trusted Devices
 
 🌐 Access Model
 External Access
@@ -90,7 +93,4 @@ Add policy-based device access controls
 🎯 Purpose
 
 This project demonstrates a practical Zero Trust implementation in a homelab environment using modern access controls and segmentation principles.
-        +-----------+------------+
-                    |
-                    v
-              Trusted Devices
+
