@@ -49,6 +49,7 @@ This environment is designed using a Zero Trust model:
                     v
               Trusted Devices
 
+
 🌐 Access Model
 External Access
 Cloudflare Tunnel
