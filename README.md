@@ -15,6 +15,8 @@ This environment is designed using a Zero Trust model:
 
 ## 🖼 Architecture Diagram
 
+  ## 🖼 Architecture Diagram
+
                 Internet
                     |
         +------------------------+
@@ -32,13 +34,13 @@ This environment is designed using a Zero Trust model:
         |  Nginx Proxy Manager   |
         +-----------+------------+
                     |
-     +--------------+--------------+
-     |                             |
-     v                             v
-+-------------+              +--------------+
-|   Web Apps  |              |   Services   |
-| (Plex, etc) |              | (Internal)   |
-+-------------+              +--------------+
+        +-----------+-----------+
+        |                       |
+        v                       v
++----------------+    +----------------+
+|    Web Apps    |    |    Services    |
+|   (Plex, etc)  |    |   (Internal)   |
++----------------+    +----------------+
 
         Private Access Layer
                     |
