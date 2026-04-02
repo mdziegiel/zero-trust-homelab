@@ -13,7 +13,9 @@ This environment is designed using a Zero Trust model:
 - Segmented internal network
 - Multiple secure access paths using Cloudflare and Tailscale
 
-                  Internet
+## 🖼 Architecture Diagram
+
+                Internet
                     |
         +------------------------+
         |   Cloudflare (WAF)     |
